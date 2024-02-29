@@ -2,7 +2,7 @@
    HTML-CSS-Header-Responsive-Coworking Space
 </h1>
 
-# Encabezado de la página web Glow Queen 💄✨
+# Encabezado de la página web Cozy Corner✨
 
 ¡Hola! Soy Esther y este es el repositorio del encabezado de la página web responsive. La plantilla está desarrollada utilizando HTML y CSS, optimizada para dispositivos moviles y diferentes tamaños de pantalla, incluyendo tabletas y escritorios.
 
