@@ -24,7 +24,7 @@ Incluye elementos como el logotipo de la marca, el menú de navegación, opcione
 ### Móvil 📱
 
 <div align="center">
-  <img src="/img/vita_movil01.jpg/" alt="vista movile"/>
+  <img src="/img/vista_movil01.jpg/" alt="vista movile"/>
 </div>
 
 <p align="center">
