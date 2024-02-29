@@ -1,0 +1,38 @@
+header{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-bottom: 30px;
+    @include breakpoint(movil){
+        width: 100%;
+    
+    }
+    @include breakpoint(tablet){
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    
+}
+.logo{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    margin: 0;
+    margin-bottom: 20px;
+    
+    @include breakpoint (movil){
+        width: 60%;
+    }
+    @include breakpoint(tablet){
+        width: 225px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 150px;
+    }
+    
+    
+}
+

@@ -1,0 +1,176 @@
+.hero{
+    display: flex;
+    justify-content: flex-end;
+    background-image: url(/img/hero-background.jpg);
+    background-repeat: no-repeat;
+    background-size: 60%;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    margin-bottom: 30px;
+
+    @include breakpoint(movil){
+        display: block;
+        justify-content: center;
+        align-items: center;
+        background-size:100% ;
+    }
+    @include breakpoint(tablet){
+        display: flex;
+        justify-content: flex-end;
+        background-size: 70%;
+        padding-top: 10px;
+    }
+    @include breakpoint(desktop){
+        background-size: 60%;
+    }
+
+}
+.hero__content{
+    width: 50%;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    
+    @include breakpoint(tablet){
+        width: 50%;
+        display: grid;
+        place-items: center;
+        margin-top: -100px;
+    }
+    @include breakpoint(desktop){
+        margin-top: 10px;
+    }
+
+}
+.hero h1{
+    font-size: 48px;
+    line-height: 55px;
+    color: black;
+    max-width: 500px;
+    position: relative;
+    @include breakpoint(movil){
+        width: 300px;
+        margin-bottom: 20px;
+
+    }
+    @include breakpoint(tablet){
+        width: 80%;
+        
+    }
+    @include breakpoint(desktop){
+        width: 100%;
+    }
+}
+.hero h1::before{
+    content: '';
+    height: 8px;
+    width: 72px;
+    position: absolute;
+    right: -25px;
+    top:22px;
+    background-color: $marron;
+    @include breakpoint(movil){
+        display: none;
+    }
+    @include breakpoint(tablet){
+        display: flex;
+    }
+}
+.hero p{
+    font-size: 18px;
+    font-weight: 300;
+    color: $marron;
+    @include breakpoint(movil){
+        font-size: 30px;
+        width: 300px;
+    }
+    @include breakpoint(desktop){
+        width: 100%;
+        font-size: 18px;
+    }
+
+
+
+}
+.hero__header{
+    background: rgba(255, 255, 255, 0.70);
+    backdrop-filter: blur(8px);
+    padding: 35px;
+    @include breakpoint(movil){
+        margin-top: 170px;
+    }
+    @include breakpoint(tablet){
+        margin-top: 88px;
+    }
+
+}
+.hero__list{
+   
+}
+.hero__list ul{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    width: 60%;
+    margin-left: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap:10px;
+    @include breakpoint(movil){
+        width: 390px;
+        
+    }
+    
+}
+.hero__list ul li{
+    font-weight: 300;
+    background-image: url(/img/icon-list-item.svg);
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: 20px;
+    padding-left: 30px;
+
+}
+.coworking-info{
+    display: flex;
+    justify-content: space-between;
+    gap: 224px;
+    padding-left: 96px;
+    padding-right: 96px;
+    @include breakpoint(movil){
+        width: 100%;
+        display: block;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    @include breakpoint(tablet){
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+
+
+    article img{
+        width: 60px;
+        margin-bottom: 10px;
+       
+        
+
+    }
+    article h3{
+        margin: 0;
+        font-size: 18px;
+        font-weight: 500;
+        margin-bottom: 10px;
+    }
+    article p{
+        font-weight: 300;
+        color: $marron;
+        margin: 0;
+        @include breakpoint(movil){
+            margin-bottom: 40px;
+        }
+    }
+}
